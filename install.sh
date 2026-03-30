@@ -44,3 +44,10 @@ fi
 
 echo -e "${GREEN}安装完成！${NC}"
 echo "提示: 进入 tmux 后按下 'Prefix + I' 来安装插件。"
+
+# 自动安装 vim-plug (Vim 插件管理器)
+if [ ! -f "~/.vim/autoload/plug.vim" ]; then
+    echo "正在安装 vim-plug..."
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
