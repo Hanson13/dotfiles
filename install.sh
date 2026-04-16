@@ -15,6 +15,7 @@ DOTFILES_DIR=$(cd $(dirname $0); pwd)
 files=(
     ".tmux.conf:~/.tmux.conf"
     ".vimrc:~/.vimrc"
+    "user-dirs.dirs:~/.config/user-dirs.dirs"
 )
 
 # 3. 执行软链接
